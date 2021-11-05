@@ -16,9 +16,9 @@ You are not allowed to collaborate during the sprint challenge.
 - [x] Open the assignment in Canvas and click on the "Set up git" option (Or, depending, if you see something along the lines of 'Load Sprint Challenge Submission in a new window' click that).
 - [x] Wire your fork to Codegrade using the "Click here for instructions on setting up Git submissions" link, select Github, authorize Github.
 - [x] Push your first commit: `git commit --allow-empty -m "first commit" && git push`. MAKE SURE TO PUSH TO MAIN, YOU NO LONGER NEED TO CREATE A NEW BRANCH!!
-- [ ] Make commits often! PUSH TO MAIN!!!
-- [ ] You can run tests locally by running npm run test.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x] Make commits often! PUSH TO MAIN!!!
+- [x] You can run tests locally by running npm run test.
+- [x] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -36,9 +36,9 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the DOM:
+- [x] Use the endpoint `[GET] https://swapi.dev/api/people` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
+- [x] Set the list of characters into state.
+- [x] Render your characters to the DOM:
 
   1. Build a React component named 'Character' to render an individual character.
   1. Map over the list in state, and for each character render a Character to the page.
@@ -77,8 +77,12 @@ After finishing your required elements, you can push your work further. These go
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
-
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+React is a JavaScript library for building user interfaces. It was built by facebook to manage all the data without bogging down the DOM or the web browser. React is scalable, reusable and fun to write. It takes data and renders it into user interfaces. 
+React is a way to offload a lot of the state (data) that apps need to use, from the DOM. React allows us to build big, fast web applications with JS. 
+2. Describe component state.
+A component is a loose term to describe a chunk of your site, for example: a header, a footer or a section. React component is a regular JavaScript function. setState() schedules an update to a component's state object. When state changes, the component responds by re-rendering.
+3. Describe props.
+props are a way of passing data from parent to child. Props are plain JavaScript objects that get passed to the component. 
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+A sife effect is anything that affects something outside the scope of the function being executed. A side effect can cause a component to return a different output for the same state and props. Side effects add functionality in a web application. We can sync our side effects with state and props changes by passing in a dependency array as the second argument to the effect hook. 
